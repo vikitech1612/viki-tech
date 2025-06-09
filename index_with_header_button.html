@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIKI Tech Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 350px; /* Adjust if needed for sticky header */
+}
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    header {
+      background-color: #005f73;
+      color: white;
+      padding: px 10px;
+      text-align: center;
+    }
+    header img {
+      height: 50px;
+      margin-bottom: 5px;
+      width: auto;
+    }
+
+    header img {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #005f73;
+    }
+
+    .services, .contact, .form-section {
+      background: #e0fbfc;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #005f73;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #005f73;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    .download-brochure {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #0a9396;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  
+    .hero {
+      background: linear-gradient(rgba(0, 95, 115, 0.85), rgba(0, 95, 115, 0.85)), url('https://source.unsplash.com/featured/?technology') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 0 0 30px 30px;
+    }
+    .hero-button {
+      background-color: #0a9396;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .hero-button:hover {
+      background-color: #94d2bd;
+      color: #003049;
+    }
+    body {
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+    h2, h3 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    section p, li {
+      margin-bottom: 10px;
+    }
+    button:hover, .download-brochure:hover {
+      background-color: #94d2bd;
+      color: #003049;
+      transition: background-color 0.3s ease;
+    }
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .whatsapp-button img {
+      width: 50px;
+      height: 50px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="VIKI_Logo.png" alt="VIKI Logo" style="width: 250px; height: 175px;"/>
+    <h1>Welcome to VIKI Tech Services</h1>
+    <p>Your trusted partner for training, digital, and business support services</p>
+    <a href="#services" class="hero-button">Explore Services</a>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>VIKI Tech Services is a one-stop solution for professional training, digital services, and business needs. We are committed to empowering individuals through expert-led training and helping communities with essential services at affordable rates.</p>
+    <a class="download-brochure" href="VIKI Tech Services Brochure.pdf" download>📄 Download Brochure</a>
+  </section>
+
+  <section class="services" id="services">
+  <h2>Our Services</h2> <!-- Move this here -->
+  <div class="service-cards">
+    <div class="service-card">
+      <h3>🎓 Training Programs</h3>
+      <ul>
+        <li>Oracle SQL & PL/SQL Training</li>
+        <li>Software Testing (Manual & Automation)</li>
+        <li>Soft Skills Development</li>
+        <li>Job Assistance & Interview Preparation</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h3>💻 Digital Services</h3>
+      <ul>
+        <li>PAN Card Applications</li>
+        <li>Passport Assistance</li>
+        <li>PVC Card Printing</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h3>🛍️ Business Services</h3>
+      <ul>
+        <li>Stationery Orders & Supplies</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <section class="form-section">
+  <h2>Contact Form</h2>
+  <form action="https://formspree.io/f/movwqzrp" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p>Form not working? Email us directly at <a href="mailto:kvksoftwaresolutionsltd@gmail.com">kvksoftwaresolutionsltd@gmail.com</a></p>
+</section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:kvksoftwaresolutionsltd@gmail.com">kvksoftwaresolutionsltd@gmail.com</a></p>
+    <p>Phone: +91 6303 71 9488</p>
+    <p>Location: Maratahalli, Bangalore</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VIKI Tech Services. All rights reserved.</p>
+  </footer>
+
+ <a class="whatsapp-button" 
+   href="https://wa.me/916303719488" 
+   target="_blank" 
+   title="Chat with us on WhatsApp">
+   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
